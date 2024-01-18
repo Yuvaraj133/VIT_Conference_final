@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+ 
+.dropdown {
+  display: inline-block;
+  margin: 0;
+  
+  background-color: white;
+}
+
+button{
+
+ 
+  font-size:18px;
+  cursor:pointer;
+  background-color: white;
+  margin-left: -10px;
+}
+
+
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  padding:5px 9px;
+  margin-top: 0;
+  font-size: 10px;;
+}
+
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+footer{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:12px;
+  
+  color:white}
+
+
+.footer-distributed{
+    background-color: #2B6777;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  
+  font: normal 39px 'Open Sans', cursive;
+  margin: 0;
+
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color: white;;
+  margin: 0;
+  font-size:15px;
+ 
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.copyrights{
+  width: 100%;
+  height:20px;
+  background: rgb(132,239,216);
+background: linear-gradient(90deg, rgba(132,239,216,1) 8%, rgba(72,146,129,1) 44%);
+}
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:30;
+  font-size: 20px;
+  left: 0;
+  color: white;
+  display: inline-block;
+  padding-right: 3px;
+}
+.footer-links a{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:15px;
+  color:white;
+  text-align: center;
+  }
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+i{
+  width:600%;
+  
+}
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 90%;
+}
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    
+    text-align: center;
+  }
+  
+  
+
+  .footer-links{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:12px;
+  color:white;
+  text-align: center;
+  }
+}
+
+
+</style>
+<style>
+    
+ .navigation {
+    font-size: 20px;
+    font-weight: 50;
+     background: white;
+    
+}
+
+ nav {
+     float: right;
+  
+}
+ nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ nav ul li {
+     float: left;
+     position: relative;
+}
+ nav ul li a,nav ul li a:visited {
+     display: block;
+     padding: 0 20px;
+     line-height: 55px;
+     color: #444;
+     background:#2b6777c6 ;
+     text-decoration: none;
+}
+ nav ul li a{
+     background: transparent;
+     color: #444;
+}
+
+
+ nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+     padding-left: 4px;
+     content: ' \025BE';
+}
+ nav ul li ul li {
+     min-width: 190px;
+}
+ nav ul li ul li a {
+     padding: 15px;
+     line-height: 20px;
+}
+ .navbar-dropdown {
+     position: absolute;
+     display: none;
+     z-index: 100;
+     background: #fffdfd;
+     box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
+}
+/* Mobile navigation */
+ .nav-mobile {
+     display: none;
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: transparent;
+     height: 55px;
+     width: 70px;
+}
+ @media only screen and (max-width: 800px) {
+  .nav{
+        background-color: #2B6777;
+    }
+    nav ul li a,nav ul li a:visited {
+     display: block;
+     padding: 0 20px;
+     line-height: 55px;
+     color: #f3f3f3;
+     background:#2b6777c6 ;
+     text-decoration: none;
+}
+     .nav-mobile {
+         display: block;
+    }
+     nav {
+      
+         padding: 55px 0 15px;
+    }
+     nav ul {
+         display: none;
+    }
+     nav ul li {
+         float: none;
+    }
+     nav ul li a {
+         padding: 15px;
+         line-height: 20px;
+         background: #ffffff;
+    }
+     nav ul li ul li a {
+         padding-left: 30px;
+    }
+     .navbar-dropdown {
+         position: static;
+}
+ @media screen and (min-width:800px) {
+     .nav-list {
+         display: block !important;
+    }
+}
+ #navbar-toggle {
+     position: absolute;
+     left: 18px;
+     top: 15px;
+     cursor: pointer;
+     padding: 10px 35px 16px 0px;
+}
+ #navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+     cursor: pointer;
+     border-radius: 1px;
+     height: 3px;
+     width: 30px;
+     background: #000000;
+     position: absolute;
+     display: block;
+     content: '';
+     transition: all 300ms ease-in-out;
+}
+ #navbar-toggle span:before {
+     top: -10px;
+}
+ #navbar-toggle span:after {
+     bottom: -10px;
+}
+ #navbar-toggle.active span {
+     background-color: transparent;
+}
+ #navbar-toggle.active span:before, #navbar-toggle.active span:after {
+     top: 0;
+}
+ #navbar-toggle.active span:before {
+     transform: rotate(45deg);
+}
+ #navbar-toggle.active span:after {
+     transform: rotate(-45deg);
+}
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Titillium+Web:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Titillium+Web:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="moments.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./img/logo.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+
+<script>	(function($) { 
+    $(function() { 
+  
+      //  open and close nav 
+      $('#navbar-toggle').click(function() {
+        $('nav ul').slideToggle();
+      });
+  
+  
+      // Hamburger toggle
+      $('#navbar-toggle').on('click', function() {
+        this.classList.toggle('active');
+      });
+  
+  
+      // If a link has a dropdown, add sub menu toggle.
+      $('nav ul li a:not(:only-child)').click(function(e) {
+        $(this).siblings('.navbar-dropdown').slideToggle("slow");
+  
+        // Close dropdown when select another dropdown
+        $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+        e.stopPropagation();
+      });
+  
+  
+      // Click outside the dropdown will remove the dropdown class
+      $('html').click(function() {
+        $('.navbar-dropdown').hide();
+      });
+    }); 
+  })(jQuery); </script>
+<style>
+  .marquee{
+    background-color: #0093E9;
+background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%);
+
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  
+  .marquee-1, .marquee-2{
+    position: absolute;
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .marquee-1{
+    animation: marquee-keywords 50s linear infinite;
+  left: 0%;  
+  }
+  .marquee-2{
+  left: 100%; 
+  }
+  
+  .text{
+    padding: 0 5rem;
+    white-space: nowrap;
+  }
+  .mark:hover{
+    color: #000000;
+  }
+  
+  @keyframes marquee-keywords {
+      0% {
+          transform: translate(0, 0);
+      }
+  
+      100% {
+          transform: translate(-100%, 0);
+      }
+  }
+  
+  @-webkit-keyframes marquee-keywords {
+      0% {
+          -webkit-transform: translate(0, 0);
+      }
+  
+      100% {
+          -webkit-transform: translate(-100%, 0);
+      }
+  }
+  .mark{
+    color: #ffffff;
+  }
+  .marquee.style-1{
+     background: black;
+     color: white;
+  }</style>
+
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand" style="display: inline;">
+            <img src="./images/logo.png" alt="vit" style="height: 5%;width: 30%;">
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="index.html" >Home</a>
+              </li>
+              <li>
+                <a href="about.html" >About</a>
+              </li>
+              <li>
+                <a href="member.html" >Members</a>
+              </li>
+              
+              <li>
+                <a href="#!" >Call For Papers</a>
+                <ul class="navbar-dropdown">
+                  <li>
+                    <a href="instructiontoauthors.html" >Instructions for Authors</a>
+                  </li>
+                  <li>
+                    <a href="scope.html" >Scope</a>
+                  </li>
+                  <li>
+                    <a href="plagarism.html" >Plagarism Policy</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="contact.html" >Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+
+<section class="home" style=" width:100%">
+
+   <div class="swiper home-slider" style=" width:100%">
+      
+      <div class="swiper-wrapper" style=" width:100%">
+
+         <section class="swiper-slide slide" style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.645) 2%, #2372afbb 58%), url(./images/banner.jpg) no-repeat; background-size: cover;">
+          
+          
+           
+            <div class="content">
+               <h3>4TH INTERNATIONAL CONFERENCE </h3>
+               <p style="font-size: 30px;">Artificial Intelligence,5G Communication and Network Technologies</p>
+               <p style="font-size:20px; font-style: italic;">(ICA5NT 2024)-Hybrid Mode</p>
+               <a href="chatbot.html" class="btn" >Registration Link</a>
+            </div>
+          
+       
+         </section>
+
+
+       
+
+      </div>
+
+      <div class="swiper-pagination">      </div>
+
+      <div class="marquee">
+        <span class="marquee-1">
+          <span class="text">
+            <a href="about.html#college"  class="mark">Want to know about our Institute •</a>
+            <a href="about.html#conference"  class="mark">Want to know about the Conference •</a>
+            <a href="about.html#It"  class="mark">Want to know about Department of Information Technology •</a>
+            <a href="about.html#Ece"  class="mark">Want to know about Department of Electronics and Communication Engineering•</a>
+            <a href="instructiontoauthors.html"  class="mark">Click here to know the instructions for the Author•</a>
+            <a href="scope.html"  class="mark">Click here to know the Scope and Topic  of the Conference</a>
+            <a href="plagarism.html"  class="mark">Click here to know the Plagarism Policy</a>
+          </span>
+          <span class="text">Lorem ipsum dolor sit amet. Quo repudiandae sint ex enim dicta in amet accusantium aut mollitia suscipit.
+        </span>
+       
+    
+  </div>
+</section>
+
+
+
+<section class="subjects">
+
+   <h1 class="heading">Important Dates</h1>
+
+   <div class="box-container">
+
+      <div class="box" >
+      
+         <h3>Paper submission opens on</h3>
+        <b><h1>11<sup>th</sup> March 2024</h1></b>
+         
+      </div>
+      <div class="box">
+      
+         <h3>Paper submission closed on</h3>
+        <h1>5<sup>th</sup> March 2024</h1>
+         
+      </div>
+      <div class="box">
+      
+         <h3>Intimation of acceptance </h3>
+        <h1>8<sup>th</sup> March 2024</h1>
+         
+      </div>
+      <div class="box">
+      
+         <h3>Date of Conference </h3>
+        <h1>21<sup>st</sup>  & 22<sup>nd</sup> March 2024</h1>
+         
+      </div>
+
+      
+
+
+   </div>
+
+</section>
+
+
+
+
+
+<section class="courses">
+   <h1 class="heading"> Key Note Speakers </h1>
+
+   <div class="box-container" style="width: 100%;display: flex;flex-direction: row;justify-content: center;gap: 70px;">
+
+      <div class="box">
+         <div class="image">
+            <img src="images/original_mithileysh.sathiyanarayanan.jpg" alt="">
+            
+         </div>
+         <div class="content">
+            <h3>Dr.Mithileysh Sathiyanarayanan</h3>
+            <p>CEO and Founder, MIT Square, London</p>
+            
+            
+         </div>
+      </div>
+
+      <div class="box">
+         <div class="image">
+            <img src="images/course-2-2.jpg" alt="">
+            
+         </div>
+         <div class="content">
+            <h3>Mr.Rama Krishnan</h3>
+            <p>Deputy Director,MSME DI,Govt of India</p>
+    
+            
+         </div>
+      </div>
+
+      
+     
+   </div>
+
+   
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-distributed">
+	
+   <div class="footer-left">
+ 
+     <h3 style="font-family: 'Playfair Display', serif;color:white">Velammal Insititue Of Technology<span><img style="height: 20vh;" src="blob:https://web.whatsapp.com/d851746e-1788-415d-b1b7-7313a8875da7" alt=""></span></h3>
+ 
+     <p class="footer-links">
+      
+       
+ 
+       
+     </p>
+ 
+     <p class="footer-company-name" style="font-family: 'Titillium Web', sans-serif;  color: white;;">Chennai – Kolkatta High Way,
+   Panchetti, Thiruvallur District.
+   Pincode – 601 204</p>
+      <h4 style="font-family: 'Titillium Web', sans-serif; color:white;font-size:15px;">
+   Email:Info@Velammaltrust.Com
+  </br>
+   Phone:9087556789</h4>
+ 
+      
+    
+ 
+
+            <a href="#" class="fab fa-facebook-f"  style="color: white;font-size: 20px; margin: 10px;;"></a>
+            <a href="#" class="fab fa-twitter" style="color: white;font-size: 20px; margin: 10px;;"></a>
+            <a href="#" class="fab fa-instagram" style="color: white;font-size: 20px; margin: 10px;;"></a>
+            <a href="#" class="fab fa-linkedin" style="color: white;font-size: 20px; margin: 10px;;"></a>
+       
+
+     
+
+     
+
+  
+ 
+ </footer>
+<div class="copyrights" style="text-align: center;align-items: center;margin: 0 auto;color: white;font-weight: 100;">
+   <h2>Developed By SixSlay Team</h2> </div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+</body>
+</html>

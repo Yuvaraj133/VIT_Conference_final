@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .box{
+        
+        width: 250px;
+        margin: 0;
+    }
+    
+.dropdown {
+  display: inline-block;
+  margin: 0;
+  
+  background-color: white;
+}
+
+button{
+
+ 
+  font-size:18px;
+  cursor:pointer;
+  background-color: white;
+  margin-left: -10px;
+}
+
+
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  background-color:#fff;
+  border-radius:5px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+}
+
+.dropdown-options a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  padding:5px 9px;
+  margin-top: 0;
+  font-size: 10px;;
+}
+
+.dropdown-options a:hover {
+  color: #0a0a23;
+  background-color: #ddd;
+  border-radius:5px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+footer{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:12px;
+  
+  color:white}
+
+
+.footer-distributed{
+    background-color: #2B6777;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  
+  font: normal 39px 'Open Sans', cursive;
+  margin: 0;
+
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color: white;;
+  margin: 0;
+  font-size:15px;
+ 
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.copyrights{
+  width: 100%;
+  height:20px;
+  background: rgb(132,239,216);
+background: linear-gradient(90deg, rgba(132,239,216,1) 8%, rgba(72,146,129,1) 44%);
+}
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:30;
+  font-size: 20px;
+  left: 0;
+  color: white;
+  display: inline-block;
+  padding-right: 3px;
+}
+.footer-links a{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:15px;
+  color:white;
+  text-align: center;
+  }
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+i{
+  width:600%;
+  
+}
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 90%;
+}
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    
+    text-align: center;
+  }
+  
+  
+
+  .footer-links{
+  font-family: 'Titillium Web', sans-serif;
+  font-size:12px;
+  color:white;
+  text-align: center;
+  }
+}
+
+
+</style>
+<style>
+    
+ .navigation {
+    font-size: 20px;
+    font-weight: 50;
+     background: white;
+    
+}
+
+ nav {
+     float: right;
+  
+}
+ nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+ nav ul li {
+     float: left;
+     position: relative;
+}
+ nav ul li a,nav ul li a:visited {
+     display: block;
+     padding: 0 20px;
+     line-height: 55px;
+     color: #444;
+     background:#2b6777c6 ;
+     text-decoration: none;
+}
+ nav ul li a{
+     background: transparent;
+     color: #444;
+}
+
+
+ nav ul li a:not(:only-child):after, nav ul li a:visited:not(:only-child):after {
+     padding-left: 4px;
+     content: ' \025BE';
+}
+ nav ul li ul li {
+     min-width: 190px;
+}
+ nav ul li ul li a {
+     padding: 15px;
+     line-height: 20px;
+}
+ .navbar-dropdown {
+     position: absolute;
+     display: none;
+     z-index: 1;
+     background: #fffdfd;
+     box-shadow: 0 0 35px 0 rgba(0,0,0,0.25);
+}
+/* Mobile navigation */
+ .nav-mobile {
+     display: none;
+     position: absolute;
+     top: 0;
+     right: 0;
+     background: transparent;
+     height: 55px;
+     width: 70px;
+}
+ @media only screen and (max-width: 800px) {
+  .nav{
+        background-color: #2B6777;
+    }
+    nav ul li a,nav ul li a:visited {
+     display: block;
+     padding: 0 20px;
+     line-height: 55px;
+     color: #f3f3f3;
+     background:#2b6777c6 ;
+     text-decoration: none;
+}
+     .nav-mobile {
+         display: block;
+    }
+     nav {
+        width:100%;
+         padding: 55px 0 15px;
+    }
+     nav ul {
+         display: none;
+    }
+     nav ul li {
+         float: none;
+    }
+     nav ul li a {
+         padding: 15px;
+         line-height: 20px;
+         background: #ffffff;
+    }
+     nav ul li ul li a {
+         padding-left: 30px;
+    }
+     .navbar-dropdown {
+         position: static;
+}
+ @media screen and (min-width:800px) {
+     .nav-list {
+         display: block !important;
+    }
+}
+ #navbar-toggle {
+     position: absolute;
+     left: 18px;
+     top: 15px;
+     cursor: pointer;
+     padding: 10px 35px 16px 0px;
+}
+ #navbar-toggle span, #navbar-toggle span:before, #navbar-toggle span:after {
+     cursor: pointer;
+     border-radius: 1px;
+     height: 3px;
+     width: 30px;
+     background: #000000;
+     position: absolute;
+     display: block;
+     content: '';
+     transition: all 300ms ease-in-out;
+}
+ #navbar-toggle span:before {
+     top: -10px;
+}
+ #navbar-toggle span:after {
+     bottom: -10px;
+}
+ #navbar-toggle.active span {
+     background-color: transparent;
+}
+ #navbar-toggle.active span:before, #navbar-toggle.active span:after {
+     top: 0;
+}
+ #navbar-toggle.active span:before {
+     transform: rotate(45deg);
+}
+ #navbar-toggle.active span:after {
+     transform: rotate(-45deg);
+}
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Titillium+Web:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Titillium+Web:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="moments.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="./img/logo.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+<script>	(function($) { 
+    $(function() { 
+  
+      //  open and close nav 
+      $('#navbar-toggle').click(function() {
+        $('nav ul').slideToggle();
+      });
+  
+  
+      // Hamburger toggle
+      $('#navbar-toggle').on('click', function() {
+        this.classList.toggle('active');
+      });
+  
+  
+      // If a link has a dropdown, add sub menu toggle.
+      $('nav ul li a:not(:only-child)').click(function(e) {
+        $(this).siblings('.navbar-dropdown').slideToggle("slow");
+  
+        // Close dropdown when select another dropdown
+        $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+        e.stopPropagation();
+      });
+  
+  
+      // Click outside the dropdown will remove the dropdown class
+      $('html').click(function() {
+        $('.navbar-dropdown').hide();
+      });
+    }); 
+  })(jQuery); </script>
+
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand" style="display: inline;">
+            <img src="./images/logo.png" alt="vit" style="height: 5%;width: 30%;">
+          </div>
+          <nav>
+            <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+            <ul class="nav-list">
+              <li>
+                <a href="index.html" >Home</a>
+              </li>
+              <li>
+                <a href="about.html" >About</a>
+              </li>
+              <li>
+                <a href="member.html" >Members</a>
+              </li>
+              
+              <li>
+                <a href="#!" >Call For Papers</a>
+                <ul class="navbar-dropdown">
+                  <li>
+                    <a href="instructiontoauthors.html" >Instructions for Authors</a>
+                  </li>
+                  <li>
+                    <a href="scope.html" >Scope</a>
+                  </li>
+                  <li>
+                    <a href="plagarism.html" >Plagarism Policy</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="contact.html" >Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+
+
+
+<section class="heading-link">
+   <h3> Organising Commitee</h3>
+   
+</section>
+
+
+
+<section class="courses">
+
+ 
+    <div class="box-container" style="width: 100%;display: flex;flex-direction: row;justify-content: center;gap: 20px;flex-wrap: wrap;">
+ 
+       <div class="box">
+         
+          <div class="content">
+             <p>CHIEF PATRONS</p>
+             <h3>Shri.M.V.M.Velmurugan</h3>
+             <p>Chairman </p>
+           
+             
+          </div>
+   </div>
+ 
+       <div class="box">
+          
+          <div class="content">
+            <p>PATRONS</p>
+             <h3>Shri.M.V.M.Velmurugan</h3>
+
+             <p> CEO</p>
+                
+             </div>
+             </div>
+
+             <div class="box">
+          
+                <div class="content">
+                  <p>PATRONS</p>
+                   <h3>Shri.M.V.M.Velmohan</h3>
+      
+                   <p>Correspondent</p>
+                      
+                   </div>
+</div>
+                   <div class="box">
+          
+                    <div class="content">
+                      <p>PATRONS</p>
+                       <h3>Shri.M.V.M. Sasikumar</h3>
+          
+                       <p>Director</p>
+                          
+                       </div>
+
+                    </div>
+
+
+                    <div class="box">
+          
+                        <div class="content">
+                          <p>General Chair</p>
+                           <h3>Shri.M.Vasu</h3>
+              
+                           <p>Advisor</p>
+                              
+                           </div>
+    
+                        </div>
+                        <div class="box">
+          
+                            <div class="content">
+                              <p>General Chair</p>
+                               <h3>Shri.K.Razak</h3>
+                  
+                               <p>Advisor</p>
+                                  
+                               </div>
+        
+                            </div>
+                            <div class="box">
+          
+                                <div class="content">
+                                  <p>General Chair</p>
+                                   <h3>Dr.N.Balaji</h3>
+                      
+                                   <p>Principal</p>
+                                      
+                                   </div>
+            
+                                </div>
+                                <div class="box">
+          
+                                    <div class="content">
+                                      <p>General Chair</p>
+                                       <h3>Dr.S.Soundararajan</h3>
+                          
+                                       <p>Vice Principal</p>
+                                          
+                                       </div>
+                
+                                    </div>
+                                    <div class="box">
+          
+                                        <div class="content">
+                                          <p>Convener</p>
+                                           <h3>Dr.B.Sridevi</h3>
+                              
+                                           <p>Head of ECE Department</p>
+                                              
+                                           </div>
+                    
+                                        </div>
+                                        <div class="box">
+          
+                                          <div class="content">
+                                            <p>Convener</p>
+                                             <h3>Dr.P.Deivendran
+                                            </h3>
+                                
+                                             <p>Head of IT Department</p>
+                                                
+                                             </div>
+                      
+                                          </div>
+                                        <div class="box">
+          
+                                            <div class="content">
+                                              <p>Coordinator</p>
+                                               <h3>Dr.R.Jothi Chitra</h3>
+                                  
+                                               <p>Professor,ECE Department</p>
+                                                  
+                                               </div>
+                        
+                                            </div>
+                                            <div class="box">
+          
+                                                <div class="content">
+                                                  <p>Coordinator</p>
+                                                   <h3>Dr.M.Sivarathinabala</h3>
+                                      
+                                                   <p>Professor,ECE Department</p>
+                                                      
+                                                   </div>
+                            
+                                                </div>
+                                                <div class="box">
+          
+                                                  <div class="content">
+                                                    <p>Coordinator</p>
+                                                     <h3>Mr. V. Vinoth Kumar
+                                                    </h3>
+                                        
+                                                     <p> Professor, IT Department
+                                                    </p>
+                                                        
+                                                     </div>
+                              
+                                                  </div>
+
+
+
+
+       </div>
+ 
+       
+      
+    </div>
+ 
+    
+ </section>
+ 
+<section class="heading-link">
+    <h3> Internantional Advisory Committe</h3>
+    
+ </section>
+ <section class="courses">
+
+ 
+    <div class="box-container" style="width: 100%;display: flex;flex-direction: row;justify-content: center;flex-wrap: wrap;">
+ 
+       
+ 
+       <div class="box"  style="width: 100%; text-align: left;">
+          
+          <div class="content" style=" text-align: left;">
+            <h3 style="font-weight: 200;">1. &nbsp;&nbsp;Mr.Sheikji Nazirudeen, Product Manager, Google, Mountain View, California, United States. <br>
+              2.&nbsp;&nbsp;Mr.Venky Annadurai, Vice President, Enterprise Data & Analytics at Patelco Credit, San Francisco.<br>
+              3.&nbsp;&nbsp;Mrs.Usha Vadivelu, QA Manager IT Application, Intuitive Surgical, Sunnyvale, California, United States.<br>
+              4.&nbsp;&nbsp;Dr. Tawfik Al-Hadhrami, Senior Lecturer, Nottinggham Trent University, UK.<br>
+              5.&nbsp;&nbsp;Prof.Pei Xiao, University of Surrey, Guildford, United Kingdom.<br>
+              6.&nbsp;&nbsp;Dr.C.Senthilpari, Senior Lecturer, Faculty of Eng., Multimedia University, Malaysia<br>
+              7.&nbsp;&nbsp;Mrs. Hasanbanu Usman, Sr.Principal RF Engineer, Northrop Grumman, USA.<br>
+              8.&nbsp;&nbsp;Mr.Vignesh Varma Murugesan, Data Architect, Enterprise Data and Analytics, Allegis Group, Maryland,<br>
+              &nbsp;&nbsp;&nbsp; United States.</h3>
+                
+             </div>
+             </div>
+
+
+
+
+
+       </div>
+ 
+       
+      
+    </div>
+ 
+    </section>
+
+    <section class="heading-link">
+      <h3>National Advisory Commitee</h3>
+      
+   </section>
+   <section class="courses">
+  
+   
+      <div class="box-container" style="width: 100%;display: flex;flex-direction: row;justify-content: center;flex-wrap: wrap;">
+   
+         
+   
+         <div class="box"  style="width: 100%; text-align: left;">
+            
+            <div class="content" style=" text-align: left;">
+              <h3 style="font-weight: 200;">1. &nbsp;&nbsp;Dr.D.Vaithiyanathan, Professor & Head, Dept. of ECE, NIT, Delhi. <br>
+                2. &nbsp;&nbsp;Mr.Rama Krishnan, Deputy Director DI, MSME, Chennai<br>
+                3. &nbsp;&nbsp;Dr.J.Sheeba Rani,Associate Professor, Department of Avionics, IISST, Trivandrum.<br>
+                4.&nbsp;&nbsp; Dr.Pritee Khanna, Professor, Department of ECE, IIITDM, Jabalpur.<br>
+                5. &nbsp;&nbsp;Dr. K.M. Bhurchandi, Professor, Visvesvaraya National Institute of Technology, Maharashtra.<br>
+                6. &nbsp;&nbsp;Dr.G.Lakshmi Sutha, Assistant Professor & Registrar (i/c) , NIT, Puducherry.<br>
+                7. &nbsp;&nbsp;Dr. Harigovindan V P, Assistant Professor &HoD, Dept. of ECE, NIT, Puducherry.<br>
+                8. &nbsp;&nbsp;Dr.S.M.Ramaswamy, Professor, Bharathidasan University, Trichy.<br>
+                9.&nbsp;&nbsp; Dr.G.Indumathi, Professor, Department of ECE, Mepco Schlenk Engineering College.<br>
+                10.&nbsp;&nbsp; Dr.Anitha, Professor, MIT , Chennai.<br>
+                11.&nbsp;&nbsp; Dr. Lalin L. Laudis, Assistant Professor, Mar Ephraem College of Engineering and Technology, Marthandam</h3>
+                  
+               </div>
+               </div>
+  
+  
+  
+  
+  
+         </div>
+   
+         
+        
+      </div>
+   
+      </section>
+ 
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-distributed">
+	
+    <div class="footer-left">
+  
+      <h3 style="font-family: 'Playfair Display', serif;color:white">Velammal Insititue Of Technology<span><img style="height: 20vh;" src="blob:https://web.whatsapp.com/d851746e-1788-415d-b1b7-7313a8875da7" alt=""></span></h3>
+  
+      <p class="footer-links">
+       
+        
+  
+        
+      </p>
+  
+      <p class="footer-company-name" style="font-family: 'Titillium Web', sans-serif;  color: white;;">Chennai – Kolkatta High Way,
+    Panchetti, Thiruvallur District.
+    Pincode – 601 204</p>
+       <h4 style="font-family: 'Titillium Web', sans-serif; color:white;font-size:15px;">
+    Email:Info@Velammaltrust.Com
+   </br>
+    Phone:9087556789</h4>
+  
+       
+     
+  
+
+             <a href="#" class="fab fa-facebook-f"  style="color: white;font-size: 20px; margin: 10px;;"></a>
+             <a href="#" class="fab fa-twitter" style="color: white;font-size: 20px; margin: 10px;;"></a>
+             <a href="#" class="fab fa-instagram" style="color: white;font-size: 20px; margin: 10px;;"></a>
+             <a href="#" class="fab fa-linkedin" style="color: white;font-size: 20px; margin: 10px;;"></a>
+        
+ 
+      
+ 
+      
+
+   
+  
+  </footer>
+<div class="copyrights" style="text-align: center;align-items: center;margin: 0 auto;color: white;font-weight: 100;">
+    <h2>Developed By SixSlay Team</h2> </div>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
